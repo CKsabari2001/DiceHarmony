@@ -1,0 +1,53 @@
+.dies-container {
+  margin-top: 30px;
+
+  @media screen and (min-width: 576px) {
+    margin-top: 50px;
+  }
+
+  .die-box {
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 50px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 70%;
+
+      @media screen and (min-width: 576px) {
+        width: 50%;
+      }
+    }
+  }
+
+  .isHeld {
+    background-color: #280136;
+  }
+}
+
+.dice-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    margin: 0 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 20px;
+  }
+}
+
+

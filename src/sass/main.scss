@@ -1,0 +1,99 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./score";
+@import "./dies";
+@import "./lastScoreCard";
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  padding: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(123, 8, 63);
+  background: radial-gradient(
+    circle,
+    rgba(123, 8, 63, 1) 0%,
+    rgba(34, 0, 53, 1) 100%
+  );
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  .stage-container {
+    text-align: center;
+
+    h1 {
+      margin-top: 30px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0px;
+        font-size: 58px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+
+      @media screen and (min-width: 768px) {
+        font-size: x-large;
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 0px;
+    background-color: #280136;
+    border: 2px solid #280136;
+    color: #fff;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+      font-size: 22px;
+      margin-right: 20px;
+      padding: 10px 30px;
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: #fff;
+      border-color: #280136;
+      color: #280136;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      @media screen and (min-width: 768px) {
+        background-color: #fff;
+        border-color: #280136;
+        color: #280136;
+      }
+    }
+  }
+}
+
+.before-game-start {
+  margin-top: 50%;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}

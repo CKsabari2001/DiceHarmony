@@ -1,0 +1,225 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.score-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.score-container .score-main-contianer {
+  display: flex;
+  justify-content: center;
+}
+.score-container .score-main-contianer .dies-count-con {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .score-container .score-main-contianer .dies-count-con {
+    width: auto;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+  }
+}
+.score-container .score-main-contianer .dies-count-con h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .score-container .score-main-contianer .dies-count-con h5 {
+    font-size: 22px;
+  }
+}
+
+.dies-container {
+  margin-top: 30px;
+}
+@media screen and (min-width: 576px) {
+  .dies-container {
+    margin-top: 50px;
+  }
+}
+.dies-container .die-box {
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .dies-container .die-box {
+    margin-bottom: 50px;
+  }
+}
+.dies-container .die-box:hover {
+  cursor: pointer;
+}
+.dies-container .die-box img {
+  width: 70%;
+}
+@media screen and (min-width: 576px) {
+  .dies-container .die-box img {
+    width: 50%;
+  }
+}
+.dies-container .isHeld {
+  background-color: #280136;
+}
+
+.dice-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice-btn button {
+  margin: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .dice-btn {
+    margin: 0 20px;
+  }
+}
+
+.last-score-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .last-score-card {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
+.last-score-card .score-con {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .last-score-card .score-con {
+    margin: 0 20px;
+    margin-bottom: 0px;
+    padding: 10px 50px;
+  }
+}
+.last-score-card .score-con h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .last-score-card .score-con h5 {
+    font-size: 22px;
+  }
+}
+.last-score-card .score-con h5 span {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  padding: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(123, 8, 63);
+  background: radial-gradient(circle, rgb(123, 8, 63) 0%, rgb(34, 0, 53) 100%);
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    justify-content: center;
+  }
+}
+.app-container .stage-container {
+  text-align: center;
+}
+.app-container .stage-container h1 {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .app-container .stage-container h1 {
+    margin-top: 0px;
+    font-size: 58px;
+  }
+}
+.app-container .stage-container p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .app-container .stage-container p {
+    font-size: x-large;
+  }
+}
+.app-container .btn {
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 0px;
+  background-color: #280136;
+  border: 2px solid #280136;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .app-container .btn {
+    margin-bottom: 0px;
+    font-size: 22px;
+    margin-right: 20px;
+    padding: 10px 30px;
+  }
+}
+.app-container .btn:active {
+  cursor: pointer;
+  background-color: #fff;
+  border-color: #280136;
+  color: #280136;
+}
+.app-container .btn:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .app-container .btn:hover {
+    background-color: #fff;
+    border-color: #280136;
+    color: #280136;
+  }
+}
+
+.before-game-start {
+  margin-top: 50%;
+}
+@media screen and (min-width: 768px) {
+  .before-game-start {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
