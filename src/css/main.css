@@ -139,10 +139,10 @@ body {
 }
 
 .app-container {
-  padding: 20px auto;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
   background: rgb(123, 8, 63);
