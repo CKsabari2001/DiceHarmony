@@ -87,6 +87,7 @@
 .last-score-card {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
   .last-score-card {
@@ -180,7 +181,7 @@ body {
   }
 }
 .app-container .stage-container p {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   color: #fff;
 }

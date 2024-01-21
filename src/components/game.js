@@ -141,10 +141,13 @@ function Game() {
       <Container>
         <div className="stage-container">
           <div className="">
-            <h1>Unity Roll</h1>
+            <h1>DiceHarmony</h1>
             <p>
-              Click to roll the dice, freeze the ones you like, and aim for a
-              matching set. Can you get them all to show the same number?
+              You'll see 12 dice numbered 1 to 6. Match them all to the same
+              number. Click "Roll" to roll unselected dice, click on a die to
+              lock its number. Use "Restart" for a new game. Score is based on
+              completion time and minimal rolls. Enjoy DiceHarmony - aim for the
+              best score!
             </p>
           </div>
           <div className="score-container">

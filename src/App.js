@@ -12,8 +12,8 @@ function App() {
     return (
       <>
         <div className="stage-container before-game-start">
-          <h1>Unity Roll</h1>
-          <p>Click Start Button to Start the Game</p>
+          <h1>DiceHarmony</h1>
+          <p>Welcome to DiceHarmony! Click "Start" to begin</p>
           <Button
             variant="primary"
             className="mt-3 btn"
