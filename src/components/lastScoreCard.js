@@ -15,20 +15,17 @@ function LastScoreCard(props) {
   const isThereTime = () => {
     return (
       <>
-        <div className="last-score-section">
-          <h2>Previous Score</h2>
-          <div className="last-score-card">
-            <div className="score-con">
-              <h5>
-                Total Time <span>{finalTime}</span>
-              </h5>
-            </div>
+        <div className="last-score-card">
+          <div className="score-con">
+            <h5>
+              Total Time <span>{finalTime}</span>
+            </h5>
+          </div>
 
-            <div className="score-con">
-              <h5>
-                Total Count <span>{rollCount}</span>
-              </h5>
-            </div>
+          <div className="score-con">
+            <h5>
+              Total Count <span>{rollCount}</span>
+            </h5>
           </div>
         </div>
       </>
@@ -45,7 +42,12 @@ function LastScoreCard(props) {
     );
   };
 
-  return <div>{time ? isThereTime() : isThereNoTime()}</div>;
+  return (
+    <div className="last-score-section">
+      <h2>Previous Score</h2>
+      {time ? isThereTime() : isThereNoTime()}
+    </div>
+  );
 }
 
 export default LastScoreCard;
