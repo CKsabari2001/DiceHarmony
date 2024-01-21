@@ -7,11 +7,6 @@ import "./css/main.css";
 
 function App() {
   const [isGameStart, setIsGameStart] = useState(false);
-  const [isRunning, setIsRunning] = useState(false);
-
-  function changeIsRunning(value) {
-    setIsRunning(value);
-  }
 
   function StartTheGame() {
     return (
@@ -24,7 +19,6 @@ function App() {
             className="mt-3 btn"
             onClick={() => {
               setIsGameStart(true);
-              setIsRunning(true);
             }}
           >
             Start
@@ -35,11 +29,7 @@ function App() {
   }
   return (
     <div className="app-container">
-      {isGameStart ? (
-        <Game isRunning={isRunning} changeIsRunning={changeIsRunning} />
-      ) : (
-        <StartTheGame />
-      )}
+      {isGameStart ? <Game /> : <StartTheGame />}
     </div>
   );
 }

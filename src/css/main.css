@@ -87,12 +87,10 @@
 .last-score-card {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .last-score-card {
     flex-direction: row;
-    margin-top: 50px;
   }
 }
 .last-score-card .score-con {
@@ -131,6 +129,19 @@
   text-align: center;
 }
 
+.last-score-section h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .last-score-section h2 {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -139,7 +150,7 @@ body {
 }
 
 .app-container {
-  padding: 20px 0;
+  padding: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

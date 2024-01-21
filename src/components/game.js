@@ -11,7 +11,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 
-function Game(props) {
+function Game() {
   const { width, height } = useWindowSize();
   const [dices, setDices] = useState(allNewDice());
   const [tenzies, setTenzies] = useState(false);
@@ -20,12 +20,10 @@ function Game(props) {
   // state to store time
   const [time, setTime] = useState(0);
   // state to check stopwatch running or not
-  const isRunning = props.isRunning;
-  const setIsRunning = props.changeIsRunning;
+  const [isRunning, setIsRunning] = useState(false);
 
   const [lastScore, setLastScore] = useState();
-
-  let objToSetLastScore = {};
+  const [objToSetLastScore, setObjToSetLastScore] = useState({});
 
   useEffect(() => {
     if (localStorage.getItem("last-score")) {
@@ -36,14 +34,14 @@ function Game(props) {
 
   useEffect(() => {
     if (tenzies) {
-      objToSetLastScore = {
+      const newObj = {
         rollCount: rollCount,
         time: time,
       };
-
-      localStorage.setItem("last-score", JSON.stringify(objToSetLastScore));
+      setObjToSetLastScore(newObj);
+      localStorage.setItem("last-score", JSON.stringify(newObj));
     }
-  }, [tenzies]);
+  }, [tenzies, rollCount, time]);
 
   useEffect(() => {
     let intervalId;
@@ -68,7 +66,7 @@ function Game(props) {
       setTenzies(true);
       setIsRunning(false);
     }
-  }, [dices, setTenzies]);
+  }, [dices, setTenzies, setIsRunning]);
 
   function genRanNum() {
     return {
