@@ -44,7 +44,7 @@ Compare your current performance with past sessions using the scoreboard at the 
 
 ## Demo
 
-Check out the live demo of the Dice Harmony - https://roaring-sherbet-445f19.netlify.app/
+Check out the live demo of the Dice Harmony - https://cksabari2001-diceharmony.netlify.app
 
 ## Run Locally
 
