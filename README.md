@@ -44,9 +44,9 @@ Compare your current performance with past sessions using the scoreboard at the 
 
 ## Screenshots
 
-![App preview]![306053925-f0b985df-dae4-408d-ad8c-3bdbfe18e7ca](https://github.com/CKsabari2001/DiceHarmony/assets/110533554/d0fe15e0-26dc-4237-85d2-705b8887742b)
+![306053925-f0b985df-dae4-408d-ad8c-3bdbfe18e7ca](https://github.com/CKsabari2001/DiceHarmony/assets/110533554/d0fe15e0-26dc-4237-85d2-705b8887742b)
 
-![App preview]![306053934-c278148c-1676-43e9-845a-2c05fb8c18ad](https://github.com/CKsabari2001/DiceHarmony/assets/110533554/fd478ba2-cd9b-4591-a90a-534d19447b53)
+![306053934-c278148c-1676-43e9-845a-2c05fb8c18ad](https://github.com/CKsabari2001/DiceHarmony/assets/110533554/fd478ba2-cd9b-4591-a90a-534d19447b53)
 
 ## Demo
 
