@@ -2,6 +2,10 @@
 
 Dice Harmony is a fun and engaging React project that brings the excitement of a dice game to your browser. The game is designed to challenge players as they attempt to match all 12 dice to the same number. While the rules are straightforward, the gameplay offers an exciting challenge!
 
+## Demo
+
+Check out the live demo of the Dice Harmony - https://cksabari2001-diceharmony.netlify.app
+
 ## Key Features
 
 ### 1. Start Button
@@ -48,9 +52,7 @@ Compare your current performance with past sessions using the scoreboard at the 
 
 ![306053934-c278148c-1676-43e9-845a-2c05fb8c18ad](https://github.com/CKsabari2001/DiceHarmony/assets/110533554/fd478ba2-cd9b-4591-a90a-534d19447b53)
 
-## Demo
 
-Check out the live demo of the Dice Harmony - https://cksabari2001-diceharmony.netlify.app
 
 ## Run Locally
 
